@@ -2,7 +2,7 @@ from TestSim import TestSim
 
 def main():
     s = TestSim();
-    s.runTime(10);
+    s.runTime(100);
     # s.loadTopo("long_ring.topo");
     # s.loadTopo("long_line.topo");
     # s.loadTopo("example.topo");
@@ -19,7 +19,7 @@ def main():
     s.runTime(60);
 
     s.ping(8, 2, "Hello, World");
-    s.runTime(10);
+    s.runTime(100);
 
     # check that every node can ping every other node
     # for src in range(1, s.numMote+1):
@@ -31,7 +31,7 @@ def main():
 
     s.moteOff(3);
 
-    s.runTime(60);
+    s.runTime(600);
 
     s.ping(8, 2, "Hello, World");
     s.runTime(10);
